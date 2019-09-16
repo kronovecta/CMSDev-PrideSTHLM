@@ -16,16 +16,12 @@ h1, h2, h3, h4, h5, h6 {
 p, a {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
 
-p {
-  font-size: 1.2em; }
-
 .btn {
-  margin-top: 2em;
+  margin: 1em 0 0 0;
   border-radius: 0.2em;
   padding: 0.7em 0.8em;
   background: white;
-  width: 100%;
-  display: initial;
+  display: inline-block;
   font-size: 1.1em;
   transition: 0.2s; }
 
@@ -46,7 +42,8 @@ html, * {
 body {
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  font-size: 18px; }
 
 nav {
   position: fixed;
@@ -100,6 +97,8 @@ main {
   align-items: flex-start; */
   position: relative;
   min-height: 100%; }
+  main .container {
+    padding: 0 1em; }
 
 section {
   margin-bottom: 5em; }
@@ -160,7 +159,8 @@ section {
     position: absolute;
     bottom: 2em;
     color: white;
-    z-index: 3; }
+    z-index: 3;
+    margin: 0; }
 
 div.content {
   max-width: 800px;
@@ -235,14 +235,17 @@ section.news {
   section.news .article-teaser {
     display: flex;
     flex-direction: row;
-    max-width: 40vw;
     padding: 2em;
     background: #ffe6e6; }
     section.news .article-teaser article {
-      flex-grow: 3;
+      width: 60%;
       margin-right: 2em; }
+      section.news .article-teaser article h1 {
+        font-size: 1.2em; }
     section.news .article-teaser aside {
-      flex-grow: 1; }
+      width: 40%; }
+      section.news .article-teaser aside img {
+        width: 100%; }
     section.news .article-teaser .read-more {
       margin-top: 1em; }
 
@@ -269,11 +272,18 @@ footer {
   footer .footer-container {
     width: 100%;
     max-width: 350px; }
+    footer .footer-container:first-child {
+      margin-right: 1em;
+      width: 70%; }
+    footer .footer-container:last-child {
+      width: 30%; }
     footer .footer-container:last-child ul {
       text-align: right;
       width: 100%; }
   footer .footer-about {
     flex-grow: 1; }
+  footer .sitemap ul li {
+    text-align: left; }
   footer .sitemap, footer .footer-contact {
     display: flex;
     flex-direction: row;
@@ -288,5 +298,12 @@ footer {
     justify-content: space-around; }
   footer .sitemap li a {
     display: block; }
+
+@media (max-width: 768px) {
+  .article-teaser {
+    flex-direction: column; }
+
+  footer .footer-container:first-child {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */
