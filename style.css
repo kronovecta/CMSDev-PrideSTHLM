@@ -261,9 +261,9 @@ footer {
       color: red;
       transition: 0.2s; }
   footer i {
-    color: var(--text-color); }
+    color: var(--text-colorx); }
     footer i:hover {
-      color: var(--text-color); }
+      color: var(--text-colorx); }
   footer p, footer h2 {
     font-size: 1em; }
   footer .footer-container {
