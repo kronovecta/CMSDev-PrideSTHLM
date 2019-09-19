@@ -8,9 +8,10 @@
     <!-- <link rel="stylesheet" href="style/style.css"> -->
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/8f9a064853.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 <body>
-    <nav>
+    <nav class="navigationbar">
         <div class="nav-brand"><img src="https://www.stockholmpride.org/wp-content/themes/stockholm-pride/assets/img/logo.svg"></div>
         <div class="nav-center">
             <li><a href="#">Home</a></li>
@@ -26,14 +27,14 @@
                 <li><i class="fab fa-facebook-f"></i></li>
             </ul>
         </div>
+        <span class="hamburger"></span>
     </nav>
 
     <main>
         <section class="section-nav">
-            <!-- <div class="section-nav-gradient"></div> -->
             <div class="section-nav-item">
-                <a href="#"></a> <!-- Insert link -->
-                <h1>Festivalen</h1>
+                <a href="feature-page.html"></a> <!-- Insert link -->
+                <h1>Park</h1>
                 <!-- <img src="https://colorlib.com/preview/theme/lifeleck/img/banner_blog/banner_blog_1.png" />  -->
                 <img src="https://www.stockholmpride.org/wp-content/uploads/2019/08/190802_Hits_o_Nostalgikva%CC%88ll_Foto_Olav_Holten-3975-2-1024x1024.jpg" />
                 <div class="section-nav-gradient"></div>
@@ -128,11 +129,11 @@
             <div class="footer-about">
                 <h3>Om Stockholm Pride</h3>
                 <p>Stockholm Pride är en ideell, icke vinstdrivande organisation där alla jobbar utan ersättning. Vi arbetar för att synliggöra hbtq-frågor och skapa en frizon för homosexuella, bisexuella, trans och queerpersoner och de könsuttryck som finns inom hbtq-rörelsen. </p>
-                <a class="btn btn-link" href="#">Läs mer om föreningen</a>
+                <a class="button button-link" href="#">Läs mer om föreningen</a>
             </div>
         </div>
     
-        <div class="footer-container col-2">
+        <div class="footer-container column-2">
             <div class="sitemap">
                 <ul>
                     <li><a href="#">Om Pride</a></li>
@@ -152,5 +153,13 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        $(document).ready(function() {
+            let navheight = $('nav').height();
+
+            $('main').css('margin-top', navheight);
+        })
+    </script>
 </body>
 </html>

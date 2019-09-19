@@ -11,10 +11,12 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
     <title>Stockholm Pride - Feature Page</title>
+    <script src="https://kit.fontawesome.com/8f9a064853.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 </head>
 
 <body>
-    <nav>
+    <!-- <nav>
         <div class="row justify-content-center">
             <div class="col-lg-2 col-sm-12">
                 <img src="References/StockholmPrideLogo_tightcrop.jpg" height="50px" class="nav-logo" />
@@ -58,90 +60,138 @@
                 </li>
             </ul>
         </div>
+    </nav> -->
+
+    <nav class="navigationbar">
+        <div class="nav-brand"><img src="https://www.stockholmpride.org/wp-content/themes/stockholm-pride/assets/img/logo.svg"></div>
+        <div class="nav-center">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pride</a></li>
+            <li><a href="#">Föreningen</a></li>
+            <li><a href="#">Item 1</a></li>
+            <li><a href="#">Item 2</a></li>
+        </div>
+        <div class="nav-social">
+            <ul>
+                <li><i class="fab fa-twitter"></i></li>
+                <li><i class="fab fa-instagram"></i></li>
+                <li><i class="fab fa-facebook-f"></i></li>
+            </ul>
+        </div>
+        <span class="hamburger"></span>
     </nav>
 
-    <section class="feature-page">
+    <main>
+        <div class="jumbotron jumbotron-fluid"></div>
+        
+        <section class="feature-page">
+            <div class="container">
+                <div class="row feature-main">
+                    <div class="col-lg-8 col-sm-12 main-text">
+                        <h1>
+                            Pride Park
+                        </h1>
+                        <p>
+                            I Pride Park har vi fantastiska artister, utställare, restauranger och barer för musik och fest
+                            varje kväll mellan onsdag 31 juli och lördag 3 augusti. Nytt för i år är också ett gäng aktiviteter
+                            runt om i parken – hoppborg, elektrisk surfbräda, dildo-kubb och andra överraskningar.
 
-    <div class="jumbotron jumbotron-fluid">
-    </div>
+                            Mitt emot stora scenen ligger Champagnebaren med bokningsbar VIP-hylla och skaldjur på menyn, maila
+                            hello@fredagsrakan.se för bokning.
 
+                            I de andra restaurangtälten, Klubb Moxy och KingKong finns klassisk festivalmat med fokus på
+                            kvalitet och gröna alternativ, du kommer också kunna hitta smårätter och snacks. Vi har som tidigare
+                            år även en rad foodtrucks med smaker och influenser från hela världen.
+                        </p>
 
-    <div class="container">
-        <div class="row feature-main">
-            <div class="col-lg-8 col-sm-12 main-text">
-                <h1>
-                    Pride Park
-                </h1>
-                <p>
-                    I Pride Park har vi fantastiska artister, utställare, restauranger och barer för musik och fest
-                    varje kväll mellan onsdag 31 juli och lördag 3 augusti. Nytt för i år är också ett gäng aktiviteter
-                    runt om i parken – hoppborg, elektrisk surfbräda, dildo-kubb och andra överraskningar.
-
-                    Mitt emot stora scenen ligger Champagnebaren med bokningsbar VIP-hylla och skaldjur på menyn, maila
-                    hello@fredagsrakan.se för bokning.
-
-                    I de andra restaurangtälten, Klubb Moxy och KingKong finns klassisk festivalmat med fokus på
-                    kvalitet och gröna alternativ, du kommer också kunna hitta smårätter och snacks. Vi har som tidigare
-                    år även en rad foodtrucks med smaker och influenser från hela världen.
-                </p>
-
-                <p>
-                    <img src="References/6XJzfatw.jpeg"/>
-                </p>
+                        <p>
+                            <img src="References/6XJzfatw.jpeg"/>
+                        </p>
 
 
-                <h4>Happy Pride Hour</h4>
-                <p>
-                    Champagnebaren, Moxy och KingKong har Happy Pride Hour varje dag i parken fram till kl 17.00 med
-                    fina priser både på mat och dryck!
-                </p>
-                <h4>Stora Scenen</h4>
-                <p>
-                    Stora scenen ligger mitt i Pride Park och här ser du invigningen, stora artister och
-                    avslutningscermonien. I år kan vi stolt presentera bland andra Village People, Pussy Riot, Weather
-                    Girls, Icona Pop, Melanie C och en hel schlagerkväll full av överaskningar!
-                </p>
+                        <h4>Happy Pride Hour</h4>
+                        <p>
+                            Champagnebaren, Moxy och KingKong har Happy Pride Hour varje dag i parken fram till kl 17.00 med
+                            fina priser både på mat och dryck!
+                        </p>
+                        <h4>Stora Scenen</h4>
+                        <p>
+                            Stora scenen ligger mitt i Pride Park och här ser du invigningen, stora artister och
+                            avslutningscermonien. I år kan vi stolt presentera bland andra Village People, Pussy Riot, Weather
+                            Girls, Icona Pop, Melanie C och en hel schlagerkväll full av överaskningar!
+                        </p>
 
-            </div>
+                    </div>
 
-            <div class="col-lg-4 col-sm-12 right-side">
-                <div class="row justify-content-center">
-                    <h2>Info</h2>
+                    <div class="col-lg-4 col-sm-12 right-side">
+                        <div class="row justify-content-center">
+                            <h2>Info</h2>
+                        </div>
+                        <div class="row">
+                            <ul>
+                                <li>
+                                    Plats: Stockholm
+                                </li>
+                                <li>
+                                    Tid: 13.00
+                                </li>
+                                <li>
+                                    Bra att veta: <a href="#">FAQ link</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <button class="btn">Program</button>
+                            <button class="btn">Köp Biljett</button>
+                        </div>
+
+                        <div class="row justify-content-center">
+                            <img src="References/karta.jpeg" style="width: 300px; margin-top: 20px;" />
+                        </div>
+
+                        <div class="row justify-content-center gallery">
+                            <h2>Galleri</h2>
+                        </div>
+                        <div class="row justify-content-center gallery">
+                            <img src="References/pridepark1.jpg" style="max-width: 150px;" />
+                            <img src="References/pridepark2.jpg" style="max-width: 150px;" />
+                        </div>
+                    </div>
                 </div>
-                <div class="row">
-                    <ul>
-                        <li>
-                            Plats: Stockholm
-                        </li>
-                        <li>
-                            Tid: 13.00
-                        </li>
-                        <li>
-                            Bra att veta: <a href="#">FAQ link</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="row justify-content-center">
-                    <button class="btn">Program</button>
-                    <button class="btn">Köp Biljett</button>
-                </div>
-
-                <div class="row justify-content-center">
-                    <img src="References/karta.jpeg" style="width: 300px; margin-top: 20px;" />
-                </div>
-
-                <div class="row justify-content-center gallery">
-                    <h2>Galleri</h2>
-                </div>
-                <div class="row justify-content-center gallery">
-                    <img src="References/pridepark1.jpg" style="max-width: 150px;" />
-                    <img src="References/pridepark2.jpg" style="max-width: 150px;" />
-                </div>
-            </div>
-        </div>
     </div>
 </section>
+</main>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-about">
+            <h3>Om Stockholm Pride</h3>
+            <p>Stockholm Pride är en ideell, icke vinstdrivande organisation där alla jobbar utan ersättning. Vi arbetar för att synliggöra hbtq-frågor och skapa en frizon för homosexuella, bisexuella, trans och queerpersoner och de könsuttryck som finns inom hbtq-rörelsen. </p>
+            <a class="button button-link" href="#">Läs mer om föreningen</a>
+        </div>
+    </div>
+
+    <div class="footer-container column-2">
+        <div class="sitemap">
+            <ul>
+                <li><a href="#">Om Pride</a></li>
+                <li><a href="#">Pressrum</a></li>   
+                <li><a href="#">Fakturera oss</a></li>  
+                <li><a href="#">Kontakta oss</a></li>   
+                <li><a href="#">Partners</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-contact">
+            <ul>
+                <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+            </ul>
+        </div>
+    </div>
+</footer>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -153,6 +203,14 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            let navheight = $('nav').height();
+
+            $('main').css('margin-top', navheight);
+        })
+    </script>
 </body>
 
 </html>
