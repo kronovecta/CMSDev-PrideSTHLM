@@ -14,7 +14,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 800; }
 
 p, a {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; }
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif !important; }
 
 h1 {
   font-weight: 800; }
@@ -99,6 +99,11 @@ nav > div {
 
 .nav-social > ul {
   margin: 0; }
+
+.nav-brand a {
+  margin: 0; }
+  .nav-brand a img {
+    vertical-align: middle; }
 
 nav li {
   display: inline-block !important;
