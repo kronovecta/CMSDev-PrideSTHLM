@@ -96,9 +96,10 @@ nav > div {
 
 .nav-social {
   margin-left: 5%; }
-
-.nav-social > ul {
-  margin: 0; }
+  .nav-social ul {
+    margin: 0; }
+    .nav-social ul li a {
+      padding: 0.5em; }
 
 .nav-brand a {
   margin: 0; }
@@ -282,6 +283,9 @@ section.news {
           margin-right: 1em; }
         .sponsor-container div ul li img {
           width: 100%; }
+
+.breadcrumbs a {
+  display: inline-block; }
 
 footer {
   bottom: 0;

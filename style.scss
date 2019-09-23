@@ -115,10 +115,15 @@ nav.navigationbar {
 
     .nav-social {
         margin-left:5%;
-    }
+        
+        ul {
+            margin:0;
 
-    .nav-social > ul {
-        margin:0;
+            li a {
+                padding:0.5em;
+                // padding-right:0.5em;
+            }
+        }
     }
 
     .nav-brand {
@@ -371,9 +376,13 @@ section.news {
                 }
             }
         }
-} 
+    } 
+}
 
-    
+.breadcrumbs {
+    a {
+        display:inline-block;
+    }
 }
 
 footer {
@@ -571,3 +580,4 @@ footer {
 .nav-link {
     padding:0 1rem !important;
 }
+
